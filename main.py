@@ -1,4 +1,3 @@
 import qrcode
-img = qrcode.make('https://www.shivamsinghydv.cf')
-type(img)  # qrcode.image.pil.PilImage
-img.save("qr_code.png")
+type(qrcode.make('pass your string here'))  # qrcode.image.pil.PilImage
+qrcode.make('pass your string here').save("qr_code.png")
