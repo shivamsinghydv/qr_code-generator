@@ -1,3 +1,9 @@
 import qrcode
-type(qrcode.make('pass your string here'))  # qrcode.image.pil.PilImage
-qrcode.make('pass your string here').save("qr_code.png")
+# type(qrcode.make('hi'))  # qrcode.image.pil.PilImage
+
+def main(string):
+    qrcode.make(string).save("qr_code.png")
+
+if __name__ == '__main__':
+    string = input("Enter the string to be encoded: ")
+    main(string)
